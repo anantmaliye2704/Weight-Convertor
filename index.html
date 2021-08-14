@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weight Convertor</title>
+        <link rel="icon" href="images/favicon.ico" type="icon" sizes=""> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <!-- Noto Sans TC and MonteCarlo  Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+        <!-- Roboto Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="weights.js"></script>
+    </head>
+    <body>
+
+        <div class="heading">
+            <h1>Weight Conversion.</h1>
+        </div>
+
+        <!-- Kilogram to Other Units -->
+
+        <!-- kilogramclass starts -->
+
+        <div class="kilogramclass">
+              
+                <!-- Kilogram to Pounds HTML -->
+                <div class="pounds">
+                         <p>
+                        <label>Kilogram</label>
+                        <input id="inputKilogram" type="number" placeholder="Kilogram-Pounds"
+                        oninput="weightConverterKG(this.value)" onchange="weightConverterKG(this.value)">
+                        </p>
+                        <p>Pounds: <span id="outputKGrams"></span></p>
+
+                </div>
+                     
+                <!-- Kilogram to Ounces HTML -->  
+                
+                <div class="ounce">
+                        <p>
+                        <label>Kilogram</label>
+                        <input id="inputKilogramOunce" type="number" placeholder="Kilogram-Ounces"
+                        oninput="weightConverterOunce(this.value)" onchange="weightConverterOunce(this.value)">
+                        </p>
+                        <p>Ounce: <span id="outputOunce"></span></p>
+
+                </div>
+                  
+                <!-- Kilogram to Grams HTML --> 
+
+                <div class="grams">
+
+                        <p>
+                        <label>Kilogram</label>
+                        <input id="inputKilogramGram" type="number" placeholder="Kilogram-Grams"
+                        oninput="weightConverterGrams(this.value)" onchange="weightConverterGrams(this.value)">
+                        </p>
+                        <p>Grams: <span id="outputGrams"></span></p>
+
+                </div>
+
+                    
+                 <!-- Kilogram to Stones HTML -->
+
+                 <div class="stones">
+
+                        <p>
+                        <label>Kilogram</label>
+                        <input id="inputKilogramStones" type="number" placeholder="Kilogram-Stones"
+                        oninput="weightConverterStones(this.value)" onchange="weightConverterStones(this.value)">
+                        </p>
+                        <p>Stones: <span id="outputStones"></span></p> 
+
+                 </div>
+                   
+
+
+        </div>
+
+        <!-- kilogramclass ends-->
+    
+    </body>
+</html>
